@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_backgrnd"
+    tools:context=".activities.LoginIntro">
+
+    <TextView
+        android:id="@+id/textLogin"
+        style="@style/TextAppearance.AppCompat.Subhead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:text="Quiz App"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_horizontal" />
+
+    <ImageView
+        android:id="@+id/imageLogin"
+        android:layout_width="280dp"
+        android:layout_height="61dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/textLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:foreground="@drawable/welcome" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="185dp"
+        android:layout_height="170dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:foreground="@drawable/ic_undraw_online_test_gba7" />
+
+    <Button
+        android:id="@+id/btnGetStarted"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="65dp"
+        android:soundEffectsEnabled="true"
+        android:text="Get Started"
+        android:background="@drawable/btn_primary"
+        app:backgroundTint="#60BCC5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textLogin" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        android:foreground="@drawable/ic_wave" />
+</androidx.constraintlayout.widget.ConstraintLayout>
